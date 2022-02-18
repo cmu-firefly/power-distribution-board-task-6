@@ -6,9 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="4" name="tKeepout" color="0" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -167,10 +168,6 @@ Created by Upverter.com</description>
 <wire x1="5.334" y1="-4.585" x2="5.334" y2="-3.975" width="0.15" layer="21"/>
 <wire x1="-5.334" y1="-4.585" x2="5.334" y2="-4.585" width="0.15" layer="21"/>
 <wire x1="-5.334" y1="-4.585" x2="-5.334" y2="-3.975" width="0.15" layer="21"/>
-<wire x1="-5.688" y1="-10.05" x2="-5.688" y2="6.405" width="0.1" layer="41"/>
-<wire x1="-5.688" y1="6.405" x2="5.688" y2="6.405" width="0.1" layer="41"/>
-<wire x1="5.688" y1="6.405" x2="5.688" y2="-10.05" width="0.1" layer="41"/>
-<wire x1="5.688" y1="-10.05" x2="-5.688" y2="-10.05" width="0.1" layer="41"/>
 <text x="-5.484" y="6.984" size="1" layer="25">&gt;NAME</text>
 <circle x="-2.534" y="-10.675" radius="0.25" width="0" layer="21"/>
 <smd name="1" x="-2.54" y="-7.791" dx="1.524" dy="4.318" layer="1"/>
@@ -267,10 +264,6 @@ Created by Upverter.com</description>
 <wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.15" layer="51"/>
 <wire x1="2.3" y1="1.975" x2="2.3" y2="-1.975" width="0.15" layer="51"/>
 <wire x1="2.3" y1="-1.975" x2="-2.3" y2="-1.975" width="0.15" layer="51"/>
-<wire x1="-3.02" y1="-2.075" x2="-3.02" y2="2.075" width="0.1" layer="41"/>
-<wire x1="-3.02" y1="2.075" x2="3.02" y2="2.075" width="0.1" layer="41"/>
-<wire x1="3.02" y1="2.075" x2="3.02" y2="-2.075" width="0.1" layer="41"/>
-<wire x1="3.02" y1="-2.075" x2="-3.02" y2="-2.075" width="0.1" layer="41"/>
 <wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.15" layer="21"/>
 <wire x1="2.3" y1="-1.975" x2="2.3" y2="-1.465" width="0.15" layer="21"/>
 <wire x1="2.3" y1="1.465" x2="2.3" y2="1.975" width="0.15" layer="21"/>
@@ -2685,12 +2678,6 @@ Wickmann</description>
 <wire x1="-3.6068" y1="5.5372" x2="-5.461" y2="5.5372" width="0.1524" layer="21"/>
 <text x="-5.0292" y="-9.7028" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<polygon width="0.0254" layer="41">
-<vertex x="3.6576" y="6.4135"/>
-<vertex x="3.6576" y="-11.4427"/>
-<vertex x="-3.6576" y="-11.4427"/>
-<vertex x="-3.6576" y="6.4135"/>
-</polygon>
 <wire x1="0" y1="5.4356" x2="7.874" y2="5.4356" width="0.1524" layer="47"/>
 <wire x1="0" y1="-5.4356" x2="7.874" y2="-5.4356" width="0.1524" layer="47"/>
 <wire x1="7.874" y1="-5.4356" x2="8.255" y2="-5.4356" width="0.1524" layer="47"/>
@@ -5768,7 +5755,7 @@ Created by Upverter.com</description>
 <part name="D2" library="Littelfuse Inc. - SMAJ5.0A" deviceset="LITTELFUSE_INC._SMAJ5.0A" device="LITTELFUSE_INC._SMAJ5.0A_0_0"/>
 <part name="CR1" library="P4SMA_16A" deviceset="P4SMA16A" device=""/>
 <part name="R4" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="RMG100" device="-V" package3d_urn="urn:adsk.eagle:package:25181/1"/>
-<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-6" device="" package3d_urn="urn:adsk.eagle:package:8078581/1"/>
+<part name="MOTOR" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="5566-6" device="" package3d_urn="urn:adsk.eagle:package:8078581/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -5922,23 +5909,23 @@ Created by Upverter.com</description>
 <attribute name="NAME" x="57.0484" y="189.23" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="61.341" y="189.23" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="X1" gate="-1" x="106.68" y="208.28" smashed="yes">
+<instance part="MOTOR" gate="-1" x="106.68" y="208.28" smashed="yes">
 <attribute name="NAME" x="109.22" y="207.518" size="1.524" layer="95"/>
 <attribute name="VALUE" x="105.918" y="209.677" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-2" x="106.68" y="205.74" smashed="yes">
+<instance part="MOTOR" gate="-2" x="106.68" y="205.74" smashed="yes">
 <attribute name="NAME" x="109.22" y="204.978" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-3" x="106.68" y="203.2" smashed="yes">
+<instance part="MOTOR" gate="-3" x="106.68" y="203.2" smashed="yes">
 <attribute name="NAME" x="109.22" y="202.438" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-4" x="106.68" y="200.66" smashed="yes">
+<instance part="MOTOR" gate="-4" x="106.68" y="200.66" smashed="yes">
 <attribute name="NAME" x="109.22" y="199.898" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-5" x="106.68" y="198.12" smashed="yes">
+<instance part="MOTOR" gate="-5" x="106.68" y="198.12" smashed="yes">
 <attribute name="NAME" x="109.22" y="197.358" size="1.524" layer="95"/>
 </instance>
-<instance part="X1" gate="-6" x="106.68" y="195.58" smashed="yes">
+<instance part="MOTOR" gate="-6" x="106.68" y="195.58" smashed="yes">
 <attribute name="NAME" x="109.22" y="194.818" size="1.524" layer="95"/>
 </instance>
 </instances>
@@ -6009,15 +5996,15 @@ Created by Upverter.com</description>
 <wire x1="58.42" y1="198.12" x2="58.42" y2="200.66" width="0.1524" layer="91"/>
 <junction x="58.42" y="200.66"/>
 <wire x1="91.44" y1="200.66" x2="91.44" y2="203.2" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="MOTOR" gate="-1" pin="S"/>
 <wire x1="91.44" y1="203.2" x2="91.44" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="208.28" x2="104.14" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-3" pin="S"/>
+<pinref part="MOTOR" gate="-3" pin="S"/>
 <wire x1="91.44" y1="203.2" x2="104.14" y2="203.2" width="0.1524" layer="91"/>
 <junction x="91.44" y="203.2"/>
 <wire x1="91.44" y1="200.66" x2="91.44" y2="198.12" width="0.1524" layer="91"/>
 <junction x="91.44" y="200.66"/>
-<pinref part="X1" gate="-5" pin="S"/>
+<pinref part="MOTOR" gate="-5" pin="S"/>
 <wire x1="91.44" y1="198.12" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6064,7 +6051,7 @@ Created by Upverter.com</description>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="88.9" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
-<label x="88.9" y="83.82" size="1.778" layer="95"/>
+<label x="91.44" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -6127,17 +6114,27 @@ Created by Upverter.com</description>
 <label x="55.88" y="172.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="MOTOR" gate="-2" pin="S"/>
 <wire x1="104.14" y1="205.74" x2="99.06" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="205.74" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-4" pin="S"/>
+<pinref part="MOTOR" gate="-4" pin="S"/>
 <wire x1="99.06" y1="185.42" x2="99.06" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="195.58" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="200.66" x2="104.14" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-6" pin="S"/>
+<pinref part="MOTOR" gate="-6" pin="S"/>
 <wire x1="104.14" y1="195.58" x2="99.06" y2="195.58" width="0.1524" layer="91"/>
 <junction x="99.06" y="195.58"/>
 <label x="99.06" y="182.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$0" pin="1_GND"/>
+<wire x1="73.66" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<label x="78.74" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$0" pin="2_GND"/>
+<wire x1="73.66" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
+<label x="78.74" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6254,6 +6251,16 @@ Created by Upverter.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,73.66,91.44,U1,2_GND,GND,,,"/>
+<approved hash="104,1,73.66,93.98,U1,1_GND,GND,,,"/>
+<approved hash="108,1,99.06,200.66,GND,,,,,"/>
+<approved hash="113,1,157.802,133.35,LED1,,,,,"/>
+<approved hash="113,1,162.882,13.97,LED2,,,,,"/>
+<approved hash="113,1,140.022,74.93,LED3,,,,,"/>
+<approved hash="113,1,58.7417,181.61,LED4,,,,,"/>
+<approved hash="113,1,57.3938,193.04,R4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

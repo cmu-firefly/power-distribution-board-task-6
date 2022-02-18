@@ -168,10 +168,6 @@ Created by Upverter.com</description>
 <wire x1="5.334" y1="-4.585" x2="5.334" y2="-3.975" width="0.15" layer="21"/>
 <wire x1="-5.334" y1="-4.585" x2="5.334" y2="-4.585" width="0.15" layer="21"/>
 <wire x1="-5.334" y1="-4.585" x2="-5.334" y2="-3.975" width="0.15" layer="21"/>
-<wire x1="-5.688" y1="-10.05" x2="-5.688" y2="6.405" width="0.1" layer="41"/>
-<wire x1="-5.688" y1="6.405" x2="5.688" y2="6.405" width="0.1" layer="41"/>
-<wire x1="5.688" y1="6.405" x2="5.688" y2="-10.05" width="0.1" layer="41"/>
-<wire x1="5.688" y1="-10.05" x2="-5.688" y2="-10.05" width="0.1" layer="41"/>
 <text x="-5.484" y="6.984" size="1" layer="25">&gt;NAME</text>
 <circle x="-2.534" y="-10.675" radius="0.25" width="0" layer="21"/>
 <smd name="1" x="-2.54" y="-7.791" dx="1.524" dy="4.318" layer="1"/>
@@ -2682,12 +2678,6 @@ Wickmann</description>
 <wire x1="-3.6068" y1="5.5372" x2="-5.461" y2="5.5372" width="0.1524" layer="21"/>
 <text x="-5.0292" y="-9.7028" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
-<polygon width="0.0254" layer="41">
-<vertex x="3.6576" y="6.4135"/>
-<vertex x="3.6576" y="-11.4427"/>
-<vertex x="-3.6576" y="-11.4427"/>
-<vertex x="-3.6576" y="6.4135"/>
-</polygon>
 <wire x1="0" y1="5.4356" x2="7.874" y2="5.4356" width="0.1524" layer="47"/>
 <wire x1="0" y1="-5.4356" x2="7.874" y2="-5.4356" width="0.1524" layer="47"/>
 <wire x1="7.874" y1="-5.4356" x2="8.255" y2="-5.4356" width="0.1524" layer="47"/>
@@ -5248,12 +5238,6 @@ Created by Upverter.com</description>
 <package name="P4SMASERIES_LTF">
 <smd name="1" x="-1.7018" y="0" dx="1.651" dy="2.1844" layer="1" rot="R90"/>
 <smd name="2" x="1.7018" y="0" dx="1.651" dy="2.1844" layer="1" rot="R90"/>
-<polygon width="0.0254" layer="41">
-<vertex x="-3.429" y="-1.778"/>
-<vertex x="-3.429" y="1.778"/>
-<vertex x="3.429" y="1.778"/>
-<vertex x="3.429" y="-1.778"/>
-</polygon>
 <wire x1="3.048" y1="0.8128" x2="4.318" y2="0.8128" width="0.1524" layer="47"/>
 <wire x1="4.318" y1="0.8128" x2="4.699" y2="0.8128" width="0.1524" layer="47"/>
 <wire x1="3.048" y1="-0.8128" x2="4.318" y2="-0.8128" width="0.1524" layer="47"/>
@@ -6061,7 +6045,7 @@ Created by Upverter.com</description>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="91.44" y1="88.9" x2="91.44" y2="86.36" width="0.1524" layer="91"/>
-<label x="88.9" y="83.82" size="1.778" layer="95"/>
+<label x="91.44" y="83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
@@ -6251,6 +6235,16 @@ Created by Upverter.com</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="204,1,73.66,91.44,U1,2_GND,,,,"/>
+<approved hash="204,1,73.66,93.98,U1,1_GND,,,,"/>
+<approved hash="108,1,99.06,200.66,GND,,,,,"/>
+<approved hash="113,1,157.802,133.35,LED1,,,,,"/>
+<approved hash="113,1,162.882,13.97,LED2,,,,,"/>
+<approved hash="113,1,140.022,74.93,LED3,,,,,"/>
+<approved hash="113,1,58.7417,181.61,LED4,,,,,"/>
+<approved hash="113,1,57.3938,193.04,R4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

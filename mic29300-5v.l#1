@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -105,6 +105,12 @@
 <wire x1="-3.6068" y1="5.5372" x2="-5.461" y2="5.5372" width="0.1524" layer="21"/>
 <text x="-5.0292" y="-9.7028" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
+<polygon width="0.0254" layer="41">
+<vertex x="3.6576" y="6.4135"/>
+<vertex x="3.6576" y="-11.4427"/>
+<vertex x="-3.6576" y="-11.4427"/>
+<vertex x="-3.6576" y="6.4135"/>
+</polygon>
 <wire x1="0" y1="5.4356" x2="7.874" y2="5.4356" width="0.1524" layer="47"/>
 <wire x1="0" y1="-5.4356" x2="7.874" y2="-5.4356" width="0.1524" layer="47"/>
 <wire x1="7.874" y1="-5.4356" x2="8.255" y2="-5.4356" width="0.1524" layer="47"/>
