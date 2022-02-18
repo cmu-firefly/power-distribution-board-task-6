@@ -6,9 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="4" name="tKeepout" color="0" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -267,10 +268,6 @@ Created by Upverter.com</description>
 <wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.15" layer="51"/>
 <wire x1="2.3" y1="1.975" x2="2.3" y2="-1.975" width="0.15" layer="51"/>
 <wire x1="2.3" y1="-1.975" x2="-2.3" y2="-1.975" width="0.15" layer="51"/>
-<wire x1="-3.02" y1="-2.075" x2="-3.02" y2="2.075" width="0.1" layer="41"/>
-<wire x1="-3.02" y1="2.075" x2="3.02" y2="2.075" width="0.1" layer="41"/>
-<wire x1="3.02" y1="2.075" x2="3.02" y2="-2.075" width="0.1" layer="41"/>
-<wire x1="3.02" y1="-2.075" x2="-3.02" y2="-2.075" width="0.1" layer="41"/>
 <wire x1="-2.3" y1="1.975" x2="2.3" y2="1.975" width="0.15" layer="21"/>
 <wire x1="2.3" y1="-1.975" x2="2.3" y2="-1.465" width="0.15" layer="21"/>
 <wire x1="2.3" y1="1.465" x2="2.3" y2="1.975" width="0.15" layer="21"/>
